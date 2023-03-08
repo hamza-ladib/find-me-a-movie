@@ -7,6 +7,7 @@ import { ref,reactive,watch} from 'vue';
  let showActors=ref(false);
  let title=ref("");
  let url=ref("");
+
  let noresult=ref("false")
  let response=ref({});
  let movie = reactive({
@@ -48,7 +49,7 @@ import { ref,reactive,watch} from 'vue';
        else {
        noresult.value=true;
       response.value.actors=response.value.actors.split(",");
-       console.log(response.actors.value,response.actos.value.split(","));
+       
        
       }
       
